@@ -4,9 +4,10 @@
     class challenge {
         public function joinChallenge($id){
             $db = database::getConnection();
-            $stmt = $db->prepare("SELECT * FROM challanges WHERE code = ?");
+            $stmt = $db->prepare("SELECT * FROM challanges WHERE code = ? AND exp >= NOW()");
             $stmt->execute([$id]);
             return $stmt->fetch(PDO::FETCH_ASSOC);
         }
     }    
+
 ?>
