@@ -98,3 +98,187 @@
     animation: slideOutRight 0.3s ease-out forwards;
 }
 
+/* Challenge Card */
+.challenge-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Challenge Header */
+.challenge-header {
+    margin-bottom: 30px;
+}
+
+.challenge-header h1 {
+    margin: 0 0 12px 0;
+    color: #1f2937;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.challenge-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.challenge-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #374151;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Hint Box */
+.hint-box {
+    background: #f9fafb;
+    border: 2px solid #fbbf24;
+    padding: 12px 0 12px 12px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.hint-box h3 {
+    margin: 0 0 4px 0;
+    color: #1f2937;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.hint-text {
+    margin: 0;
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Answer Form */
+.answer-form {
+    margin: 30px 0;
+    padding: 24px;
+}
+
+.answer-form label {
+    display: block;
+    margin-bottom: 12px;
+    color: #374151;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.answer-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.answer-form input[type="text"] {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    transition: all 0.3s ease;
+    background: white;
+    color: #1f2937;
+}
+
+.answer-form input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    background: white;
+}
+
+.answer-form input[type="text"]::placeholder {
+    color: #9ca3af;
+}
+
+.answer-form button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.answer-form button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px);
+}
+
+.answer-form button:active {
+    transform: translateY(0);
+}
+
+.answer-form button:disabled {
+    background: linear-gradient(135deg, #9ca3af, #6b7280);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Result Box */
+.result-box {
+    margin-top: 24px;
+    padding: 16px;
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    border-radius: 6px;
+}
+
+.result-box strong {
+    color: #166534;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.result-content {
+    background: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    color: #374151;
+    max-height: 300px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5;
+    border: 1px solid #e5e7eb;
+}
+
+.upload-path {
+    font-family: 'Monaco', 'Courier New', monospace;
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
