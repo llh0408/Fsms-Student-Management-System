@@ -1,0 +1,40 @@
+html, body {
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #3556dc 0%, #2a4a9e 100%);
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    padding: 15px 0px 15px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+input, textarea, select {
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+

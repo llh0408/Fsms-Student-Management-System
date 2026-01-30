@@ -1,0 +1,357 @@
+/* Avatar Upload Styles */
+.avatar-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 0 0 0 60px;
+    background-color: white;
+    width: 100%;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 35%;
+    overflow: visible;
+    margin: 0;
+    border-radius: 0;
+}
+
+/* Profile Header */
+.profile-header {
+    padding: 15px 25px 15px 65px;
+    text-align: center;
+    color: white;
+}
+
+.avatar-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+
+/* Profile Body */
+.profile-body {
+    padding: 30px 25px;
+    background-color: white;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+.profile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.profile-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.profile-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #7a8fa5;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.profile-value {
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* Role Badge */
+.role-badge {
+    display: inline-block;
+    background: #3556dc;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.3px;
+}
+
+/* Profile Footer */
+.profile-footer {
+    padding: 20px 25px;
+    display: flex;
+    gap: 12px;
+    background-color: white;
+}
+
+/* Edit Button */
+.btn-edit {
+    flex: 1;
+    padding: 11px 20px;
+    background: #2a4a9e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.btn-edit:hover {
+    background: #2a4a9e;
+    transform: translateY(-1px);
+}
+
+.btn-edit:active {
+    transform: translateY(0);
+}
+
+/* Logout Button */
+.btn-logout {
+    flex: 1;
+    padding: 11px 20px;
+    background-color: #f0f2f5;
+    color: #2c3e50;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.btn-logout:hover {
+    background-color: #e0e6ed;
+    border-color: #d0d6e0;
+    color: #1a2332;
+}
+
+.action-history {
+    width: 65%;
+    overflow: visible;
+    margin: 0;
+    border-radius: 0;
+}
+
+.history-header {
+    padding: 20px 25px;
+    color: #3556dc;
+}
+
+.history-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.history-body {
+    padding: 20px 25px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 13px;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.history-action {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.history-time {
+    color: #7a8fa5;
+    font-size: 12px;
+    margin-top: 4px;
+}
+@media (max-width: 1024px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .profile-card,
+    .action-history {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px 15px;
+    }
+    
+    .profile-card {
+        max-width: 100%;
+    }
+    
+    .profile-header {
+        padding: 30px 20px;
+    }
+    
+    .avatar {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+    
+    .profile-name {
+        font-size: 22px;
+        color: black;
+    }
+    
+    .profile-body {
+        padding: 25px 20px;
+    }
+    
+    .profile-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+    
+    .profile-value {
+        text-align: left;
+        margin-top: 4px;
+    }
+    
+    .profile-footer {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-edit,
+    .btn-logout {
+        width: 100%;
+    }
+}
+
+/* Additional navbar styles from profile.php */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn.logout {
+    background: rgb(255, 206, 69);
+}
+
+.nav-btn i {
+    font-size: 12px;
+}
+
+.profile-footer {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .profile-header {
+        padding: 25px 15px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .profile-name {
+        font-size: 20px;
+        color: black
+    }
+    
+    .profile-body {
+        padding: 20px 15px;
+    }
+    
+    .profile-label {
+        font-size: 12px;
+    }
+    
+    .profile-value {
+        font-size: 13px;
+    }
+}

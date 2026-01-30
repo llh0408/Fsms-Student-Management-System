@@ -1,0 +1,265 @@
+/* User List Container */
+.user-list-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px;
+    min-height: 80vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(135deg, #3556dc 0%, #2a4a9e 100%);
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link i {
+    font-size: 14px;
+}
+
+.nav-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-user:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-user .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.nav-user .user-name {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.user-list-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-list-header h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.user-list-header p {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* User Table */
+.user-table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th {
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e1e8ed;
+}
+
+.user-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e1e8ed;
+    font-size: 14px;
+}
+
+.user-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.user-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.user-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table tbody tr.teacher-row td {
+    color: #17a2b8 !important;
+}
+
+.user-table tbody tr.teacher-row .user-name {
+    color: #17a2b8 !important;
+    font-weight: 600;
+}
+
+.user-table tbody tr.teacher-row .user-email {
+    color: #17a2b8 !important;
+    font-size: 13px;
+}
+
+.user-table tbody tr.teacher-row .user-info div {
+    color: #17a2b8;
+}
+
+/* User Avatar */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e0e6ed;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.user-email {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+/* Role Badge */
+.role-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.role-badge.teacher {
+    background: #17a2b8;
+    color: white;
+}
+
+.role-badge.student {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    background: #6c757d;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    font-size: 1.05em;
+}
+
+.back-btn:hover {
+    background: #5a6268;
+}
+
+/* Alert Message */
+.alert-message {
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.alert-message.info {
+    background-color: #e3f2fd;
+    border: 1px solid #bbdefb;
+    color: #1976d2;
+}
+
+.no-users {
+    text-align: center;
+    padding: 80px 40px;
+    color: #6c757d;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-users i {
+    font-size: 72px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+}
+
+.no-users p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.no-users a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.no-users a:hover {
+    text-decoration: underline;
+}
