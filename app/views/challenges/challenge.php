@@ -87,8 +87,7 @@
                 <?php unset($_SESSION['challenge_error']); ?>
             <?php endif; ?>
 
-            <?php if (isset($_SESSION['challenge_result'])): ?>
-                <?php $flashResult = $_SESSION['challenge_result']; ?>
+          <?php if ($flashResult !== null): ?> 
                 <?php if (isset($flashResult['success']) && $flashResult['success']): ?>
                     <div class="toast toast-success" id="successToast">
                         <div class="toast-icon">
