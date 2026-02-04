@@ -109,7 +109,7 @@
             $db = database::getConnection();
 
             while (true) {
-                $code = 'CH' . strtoupper(substr(bin2hex(random_bytes(4)), 0, 8));
+                $code = 'CH' . strtoupper(bin2hex(random_bytes(4)));
                 $stmt = $db->prepare("SELECT code FROM challenges WHERE code = ? LIMIT 1");
                 $stmt->execute([$code]);
                 if (!$stmt->fetch()) {
